@@ -83,6 +83,66 @@ void Lapangan(void){
     	glVertex3f(100,-64,-0.9);
     	glEnd();
 	
+	//gawang
+    glLineWidth(1);
+    glBegin(GL_LINE_LOOP);//kiri
+    glColor3f(1,1,1);
+    glVertex3f(-50,3.62,2.3);
+    glVertex3f(-50,-3.62,2.3);
+    glVertex3f(-50,-3.62,0);
+    glVertex3f(-50,3.62,0);
+    glEnd();
+    glLineWidth(1);
+    glBegin(GL_LINE_STRIP);//penyangga 1
+    glColor3f(1,1,1);
+    glVertex3f(-50,     -3.62,2);
+    glVertex3f(-51,     -3.62,2);
+    glVertex3f(-51.5,   -3.62,0);
+    glVertex3f(-51,     -3.62,2);
+    glEnd();
+    glLineWidth(1);
+    glBegin(GL_LINE_STRIP);//penyangga 2
+    glColor3f(1,1,1);
+    glVertex3f(-50,     3.62,2);
+    glVertex3f(-51,     3.62,2);
+    glVertex3f(-51.5,   3.62,0);
+    glVertex3f(-51,     3.62,2);
+    glEnd();
+    glBegin(GL_LINE_STRIP);//bayangkan jaring
+    glColor3f(1,1,1);
+    glVertex3f(-51,-3.62,2);
+    glVertex3f(-51,3.62,2);
+    glEnd();
+    glBegin(GL_LINE_STRIP);//bayangkan jaring
+    glColor3f(1,1,1);;
+    glVertex3f(51,-3.62,2);
+    glVertex3f(51,3.62,2);
+    glEnd();
+    glLineWidth(1);
+    glBegin(GL_LINE_LOOP);//kanan
+    glColor3d(1,1,1);
+    glVertex3f(50,3.62,2.3);
+    glVertex3f(50,-3.62,2.3);
+    glVertex3f(50,-3.62,0);
+    glVertex3f(50,3.62,0);
+    glEnd();
+    glLineWidth(1);
+    glBegin(GL_LINE_STRIP);//penyangga 1
+    glColor3f(1,1,1);
+    glVertex3f(50,-3.62,2);
+    glVertex3f(51,-3.62,2);
+    glVertex3f(51.5,-3.62,0);
+    glVertex3f(51,-3.62,2);
+    glEnd();
+    glLineWidth(1);
+    glBegin(GL_LINE_STRIP);//penyangga 2
+    glColor3f(1,1,1);
+    glVertex3f(50,3.62,2);
+    glVertex3f(51,3.62,2);
+    glVertex3f(51.5,3.62,0);
+    glVertex3f(51,3.62,2);
+    glEnd();
+	
 	//Lapangan
 	glBegin(GL_QUADS);
 	glColor3f(0,0.8,0);
