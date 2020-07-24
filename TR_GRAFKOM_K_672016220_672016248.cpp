@@ -1415,6 +1415,17 @@ void atap(void){
     glVertex3d(50,-36,30);
     glEnd();
 	
+    glBegin(GL_POLYGON);//panjang kiri
+    glColor3d(0.5,0.7,0.6);
+    glVertex3d(-54,32,30);
+    glVertex3d(-54,-32,30);
+    glVertex3d(-62,-32,30);
+    glColor3d(0.5,0.8,0.7);
+    glVertex3d(-70,-32,26);
+    glVertex3d(-70,32,26);
+    glVertex3d(-62,32,30);
+    glEnd();
+	
 	
 }
 
