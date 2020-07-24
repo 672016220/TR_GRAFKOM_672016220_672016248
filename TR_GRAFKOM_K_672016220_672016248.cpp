@@ -1363,6 +1363,34 @@ void atap(void){
     glVertex3d(66,-40,26);
     glEnd();	
 	
+    glBegin(GL_POLYGON);//Pojok kanan atas,tengah atas
+    glColor3d(0.5,0.7,0.6);
+    glVertex3d(54,32,30);
+    glVertex3d(50,36,30);
+    glVertex3d(50,44,30);
+    glVertex3d(62,32,30);
+    glEnd();
+    glBegin(GL_TRIANGLES);//Pojok kanan,kanan
+    glColor3d(0.5,0.7,0.6);
+    glVertex3d(70,32,26);
+    glVertex3d(66,40,26);
+    glVertex3d(62,32,30);
+    glEnd();
+    glBegin(GL_TRIANGLES);//Pojok kanan,kiri
+    glColor3d(0.5,0.7,0.6);
+    glVertex3d(50,52,26);
+    glVertex3d(58,48,26);
+    glVertex3d(50,44,30);
+    glEnd();
+    glBegin(GL_POLYGON);//Pojok kanan,tengah bawah
+    glColor3d(0.5,0.7,0.6);
+    glVertex3d(62,32,30);
+    glVertex3d(50,44,30);
+    glColor3d(0.5,0.8,0.7);
+    glVertex3d(58,48,26);
+    glVertex3d(66,40,26);
+    glEnd();
+	
 }
 
 void display(void)
