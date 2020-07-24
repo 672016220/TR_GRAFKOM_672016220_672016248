@@ -152,6 +152,55 @@ void Lapangan(void){
     	glVertex3f(50,-30,0);
     	glEnd();
 	
+	//Flag
+    glLineWidth(2);
+    glBegin(GL_LINE_STRIP);//1
+    glColor3f(1,1,1);
+    glVertex3f(49,29,0);
+    glVertex3f(49,29,2);
+    glEnd();
+    glBegin(GL_TRIANGLES);
+    glColor3f(1,0,0);
+    glVertex3f(49,29,1.9);
+    glVertex3f(49,29,1);
+    glVertex3f(49.5,29,1.45);
+    glEnd();
+    glLineWidth(2);
+    glBegin(GL_LINE_STRIP);//2
+    glColor3f(1,1,1);
+    glVertex3f(49,-29,0);
+    glVertex3f(49,-29,2);
+    glEnd();
+    glBegin(GL_TRIANGLES);
+    glColor3f(1,0,0);
+    glVertex3f(49,-29,1.9);
+    glVertex3f(49,-29,1);
+    glVertex3f(49.5,-29,1.45);
+    glEnd();
+    glLineWidth(2);
+    glBegin(GL_LINE_STRIP);//3
+    glColor3f(1,1,1);
+    glVertex3f(-49,29,0);
+    glVertex3f(-49,29,2);
+    glEnd();
+    glBegin(GL_TRIANGLES);
+    glColor3f(1,0,0);
+    glVertex3f(-49,29,1.9);
+    glVertex3f(-49,29,1);
+    glVertex3f(-49.5,29,1.45);
+    glEnd();
+    glLineWidth(2);
+    glBegin(GL_LINE_STRIP);//4
+    glColor3f(1,1,1);
+    glVertex3f(-49,-29,0);
+    glVertex3f(-49,-29,2);
+    glEnd();
+    glBegin(GL_TRIANGLES);
+    glColor3f(1,0,0);
+    glVertex3f(-49,-29,1.9);
+    glVertex3f(-49,-29,1);
+    glVertex3f(-49.5,-29,1.45);
+    glEnd();
 	    //Garis
     	glLineWidth(1);
 	glBegin(GL_LINE_LOOP);
