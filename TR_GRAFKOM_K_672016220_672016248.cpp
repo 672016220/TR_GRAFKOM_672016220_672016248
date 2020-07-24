@@ -1477,6 +1477,47 @@ void atap(void){
     glVertex3d(-54,2,26.5);
     glEnd();
 	
+    glBegin(GL_POLYGON);//papan kanan
+    glColor3d(1,1,1);
+    glVertex3d(54,-5,30);
+    glVertex3d(54,5,30);
+    glVertex3d(54,5,25);
+    glVertex3d(54,-5,25);
+    glEnd();
+    glLineWidth(2);
+    glBegin(GL_LINE_LOOP);//border papan
+    glColor3f(0,0,0);
+    glVertex3f(54,-5,30);
+    glVertex3f(54,5,30);
+    glVertex3f(54,5,25);
+    glVertex3f(54,-5,25);
+    glEnd();
+    glLineWidth(2);
+    glBegin(GL_LINE_LOOP);//garis tengah
+    glColor3f(0,0,0);
+    glVertex3f(54,0,30);
+    glVertex3f(54,0,30);
+    glVertex3f(54,0,25);
+    glVertex3f(54,0,25);
+    glEnd();
+    glLineWidth(3);
+    glBegin(GL_LINE_LOOP);//angka kanan
+    glColor3d(0,0,0);
+    glVertex3d(54,-2,28.5);
+    glVertex3d(54,-4,28.5);
+    glVertex3d(54,-4,26.5);
+    glVertex3d(54,-2,26.5);
+    glEnd();
+    glLineWidth(3);
+    glBegin(GL_LINE_LOOP);//angka kiri
+    glColor3d(0,0,0);
+    glVertex3d(54,2,28.5);
+    glVertex3d(54,4,28.5);
+    glVertex3d(54,4,26.5);
+    glVertex3d(54,2,26.5);
+    glEnd();
+
+	
 }
 
 void display(void)
