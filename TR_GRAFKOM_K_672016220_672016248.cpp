@@ -327,6 +327,41 @@ void Lapangan(void){
 	glVertex3d(-5,-33.5,1.8);
 	glVertex3d(-5,-32,2);
 	glEnd();
+	
+	//Iklan
+	glBegin(GL_QUADS);
+	glColor3f(1,1,1);
+	glVertex3f(-53,-35,0);
+	glVertex3f(-53,-35,1);
+	glColor3f(1,0.2,0.5);
+	glVertex3f(53,-35,1);
+    glVertex3f(53,-35,0);
+    glEnd();
+    glBegin(GL_QUADS);
+	glColor3f(1,1,1);
+	glVertex3f(-53,35,0);
+	glVertex3f(-53,35,1);
+	glColor3f(1,0.2,0.5);
+	glVertex3f(53,35,1);
+    glVertex3f(53,35,0);
+    glEnd();
+    glBegin(GL_QUADS);
+	glColor3f(1,1,1);
+	glVertex3f(-53,-35,0);
+	glVertex3f(-53,-35,1);
+	glColor3f(1,0.2,0.5);
+	glVertex3f(-53,35,1);
+    glVertex3f(-53,35,0);
+    glEnd();
+    glBegin(GL_QUADS);
+	glColor3f(1,1,1);
+	glVertex3f(53,-35,0);
+	glVertex3f(53,-35,1);
+	glColor3f(1,0.2,0.5);
+	glVertex3f(53,35,1);
+    glVertex3f(53,35,0);
+    glEnd();
+
 }
 
 void Penonton(void){
