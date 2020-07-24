@@ -1596,6 +1596,34 @@ void atap(void){
     glVertex3d(4,-36,26.5);
     glVertex3d(2,-36,26.5);
     glEnd();
+	
+    glBegin(GL_LINE_STRIP);//Lampu bawah kanan
+    glColor3d(0,0,0);
+    glVertex3d(4,-36,30);
+    glVertex3d(4,-34,30);
+    glVertex3d(4,-34,28);
+    glEnd();
+
+    glBegin(GL_LINE_STRIP);//Lampu bawah kiri
+    glColor3d(0,0,0);
+    glVertex3d(-4,-36,30);
+    glVertex3d(-4,-34,30);
+    glVertex3d(-4,-34,28);
+    glEnd();
+	
+    glBegin(GL_LINE_STRIP);//Lampu atas kiri
+    glColor3d(0,0,0);
+    glVertex3d(-4,36,30);
+    glVertex3d(-4,34,30);
+    glVertex3d(-4,34,28);
+    glEnd();
+	
+    glBegin(GL_LINE_STRIP);//Lampu atas kanan
+    glColor3d(0,0,0);
+    glVertex3d(4,36,30);
+    glVertex3d(4,34,30);
+    glVertex3d(4,34,28);
+    glEnd();
 }
 
 void display(void)
