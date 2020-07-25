@@ -33,6 +33,7 @@ int main(int argc, char**argv)
     glutCreateWindow("672016220 - 672016248");
     init();
     glutDisplayFunc(display);
+    glViewport(50,50,700,500);
     glutKeyboardFunc(keyboard);
     glutMouseFunc(mouse);
     glutMotionFunc(mouseMotion);
