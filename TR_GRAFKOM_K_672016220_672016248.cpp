@@ -6,7 +6,7 @@ void init(void);
 void display(void);
 void tampil(void);
 void Lapangan(void);
-void posenggggg(void);
+void muter(void);
 void Penonton(void);
 void lawang(void);
 void atap(void);
@@ -1662,7 +1662,7 @@ void mouse(int button, int state, int x, int y)
 tampil();
 }
 
-void posenggggg()
+void muter()
 {
     glLoadIdentity();
     gluLookAt(0.0f, 0.0f, 3.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
