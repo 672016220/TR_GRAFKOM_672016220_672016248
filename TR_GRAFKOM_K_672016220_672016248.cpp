@@ -1672,7 +1672,7 @@ void muter()
 
 void mouseMotion(int x, int y)
 {
-    posenggggg();
+    muter();
     if (mouseDown)
     {
         yrot = x - xdiff;
